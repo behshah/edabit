@@ -1,3 +1,4 @@
+//LEVEL 2
 //Write a function that takes two integers (hours, minutes),
 // converts them to seconds, and adds them.
 
@@ -182,3 +183,44 @@ function dividesEvenly(a, b) {
 	return a % b == 0
 }
 // console.log(dividesEvenly(100,100))
+//***************************************************************************************
+
+//in this challenge, a farmer is asking you to tell him how many legs can be counted among all his animals.
+// The farmer breeds three species:
+//chickens = 2 legs
+//cows = 4 legs
+//pigs = 4 legs
+//The farmer has counted his animals and he gives you a subtotal for each species. 
+//You have to implement a function that returns the total number of legs of all the animals.
+function animals(chickens, cows, pigs) {
+    var chikensLeg = 2;
+    var cowsLeg = 4;
+    var pigsLegs = 4;
+return (chickens*chikensLeg) + (cows*cowsLeg) + (pigs*pigsLegs);
+}
+// console.log(animals(4,6,8));
+//**********************************************************************************
+
+//Create a function that returns the number of frames shown in a given number of minutes for a certain FPS.
+//FPS stands for "frames per second" and it's the number of frames a computer screen shows every second.
+
+function frames(minutes, fps) {
+    var convMinute = minutes*60;
+    return convMinute*fps;
+}
+
+// console.log(frames(10,10))
+//*************************************************************************************************
+
+//The challenge is to try and fix this buggy code, given the inputs true and false.
+// See the examples below for the expected output.
+
+function has_bugs(buggy_code) {
+	if (buggy_code == true) {
+		return 'sad days'
+	} else {
+        return 'it\'s a good day'
+        
+	}
+}
+console.log(has_bugs(false))
